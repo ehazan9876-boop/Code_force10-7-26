@@ -1,26 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-int a,b,c,num1=0,num2=0;
-cin>>a>>b>>c;
-
-for(int i=1; i<=a; i++){
-    int gun = b*i;
-    if(gun==c){
-        num1=num1+1;
+int n;
+cin>>n;
+int arr[n];
+for(int i=0;i<n;i++){
+    int a,b;
+    cin>>a>>b;
+    if(a<b){
+        cout<<"YES"<<endl;
     }
-    else{
-        num2=num2+1;
+    else if(a>=b){
+        cout<<"NO"<<endl;
     }
 }
-if(num1==1){
-    cout<<"YES"<<endl;
-}
-else{
-    cout<<"NO"<<endl;
-}
-
-
 
 return 0;
 }
